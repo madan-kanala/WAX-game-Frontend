@@ -1,21 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import logo from "./waxp.gif";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Hustle WAX NFT Game Project</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://on.wax.io/wax-io/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          We will success!
         </a>
       </header>
     </div>

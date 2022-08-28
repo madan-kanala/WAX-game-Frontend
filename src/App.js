@@ -1,8 +1,13 @@
+
+import React from 'react';
+import Hero from './components/Home/Hero/Hero';
 import "./App.css";
 import logo from "./waxp.gif";
 
-function App() {
+const App = () => {
   return (
+    <div>
+
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -16,8 +21,9 @@ function App() {
           We will success!
         </a>
       </header>
+            <Hero />
     </div>
   );
-}
+};
 
 export default App;

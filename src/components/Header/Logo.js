@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from '../../assets/images/waxp.png';
+import logoImage from '../../assets/images/waxp.gif';
 const Logo = () => {
   return (
     <div className='w-20'>

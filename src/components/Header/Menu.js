@@ -1,4 +1,6 @@
 import React from 'react';
+import HustleMenu from './MenuItems/HustleMenu';
+import ShopMenu from './MenuItems/ShopMenu';
 
 const Menu = () => {
   return (
@@ -6,9 +8,9 @@ const Menu = () => {
       <ul className='flex gap-6'>
         <Item text={'home'} />
         <Item text={'Profile'} />
-        <Item text={'Hustle'} />
+        <HustleMenu />
         <Item text={'Drop Zone'} />
-        <Item text={'Shop'} />
+        <ShopMenu />
         <Item text={'Laundering'} />
         <Item text={'Safe House'} />
       </ul>

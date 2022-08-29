@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Menus = ({ list }) => {
   return (
     <ul class='py-1 text-sm text-gray-700 dark:text-gray-200'>
@@ -7,7 +8,7 @@ const Menus = ({ list }) => {
           className='block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer'
           key={item?.id || Math.random()}
         >
-          <a href={item.url}>{item.label}</a>
+          <Link to={item.url}>{item.label}</Link>
         </li>
       ))}
     </ul>

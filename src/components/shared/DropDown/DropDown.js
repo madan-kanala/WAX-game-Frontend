@@ -15,7 +15,7 @@ const DropDown = ({ isShow, onClose, element, children }) => {
 
         <div
           id='dropdown'
-          class={`'z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 block ${
+          className={`z-[9999] w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 block ${
             isShow ? 'block' : 'hidden'
           }`}
           style={{

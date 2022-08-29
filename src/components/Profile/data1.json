@@ -1,0 +1,12 @@
+[
+  { "id": 1, "bonus": -6.4, "count": 336 },
+  { "id": 2, "bonus": 1.0, "count": 302 },
+  { "id": 3, "bonus": -5.9, "count": 637 },
+  { "id": 4, "bonus": -7.8, "count": 678 },
+  { "id": 5, "bonus": 3.1, "count": 377 },
+  { "id": 6, "bonus": 3.8, "count": 360 },
+  { "id": 7, "bonus": -2.7, "count": 952 },
+  { "id": 8, "bonus": 0.9, "count": 977 },
+  { "id": 9, "bonus": 5.9, "count": 323 },
+  { "id": 10, "bonus": 9.4, "count": 631 }
+]

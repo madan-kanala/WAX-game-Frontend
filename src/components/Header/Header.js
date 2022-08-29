@@ -3,9 +3,9 @@ import AuthMenu from './AuthMenu';
 import Logo from './Logo';
 import Menu from './Menu';
 
-const Header = () => {
+const Header = ({ isTransparent = false }) => {
   return (
-    <div className='bg-transparent'>
+    <div className={`${isTransparent ? 'bg-transparent' : 'bg-[#080321]'}`}>
       <div className='mx-10'>
         <div className='flex justify-between items-center'>
           <Logo />

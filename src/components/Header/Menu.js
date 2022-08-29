@@ -1,29 +1,29 @@
-import React from "react";
-import HustleMenu from "./MenuItems/HustleMenu";
-import ShopMenu from "./MenuItems/ShopMenu";
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import HustleMenu from './MenuItems/HustleMenu';
+import ShopMenu from './MenuItems/ShopMenu';
 const Menu = () => {
   return (
     <div>
-      <ul className="flex gap-6">
-        <Item text={"home"} />
-        <Item text={"Profile"} />
+      <ul className='flex gap-6'>
+        <Item text={'home'} url='/' />
+        <Item text={'Profile'} url='/profile' />
         <HustleMenu />
-        <Item text={"Drop Zone"} />
+        <Item text={'Drop Zone'} url='/drop-zone' />
         <ShopMenu />
-        <Item text={"Laundering"} />
-        <Item text={"Safe House"} />
+        <Item text={'Laundering'} url='/laundering' />
+        <Item text={'Safe House'} url='/safe-house' />
       </ul>
     </div>
   );
 };
 
-const Item = ({ text }) => {
+const Item = ({ text, url }) => {
   return (
-    <li className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white capitalize cursor-pointer hover:from-purple-400 hover:to-pink-600 font-Inter text-lg font-semibold tracking-wide">
-      <a href="/" style={{ all: "inherit" }}>
+    <li className='text-transparent bg-clip-text bg-gradient-to-r from-white to-white capitalize cursor-pointer hover:from-purple-400 hover:to-pink-600 font-Inter text-lg font-semibold tracking-wide'>
+      <Link to={url} style={{ all: 'inherit' }}>
         {text}
-      </a>
+      </Link>
     </li>
   );
 };

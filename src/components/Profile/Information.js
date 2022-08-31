@@ -3,7 +3,7 @@ import React from 'react';
 const Information = () => {
   return (
     <div className='md:w-4/12'>
-      <div className='p-3 shadow-lg shadow-slate-400 mr-2 text-xl'>
+      <div className='p-8 shadow-lg shadow-slate-400 mr-2 text-xl rounded-md'>
         <div className='flex flex-col gap-y-1 '>
           <p>
             <span className='font-bold'>Name:</span> Jhon Doe

@@ -37,7 +37,7 @@ const HustleMenu = () => {
       <div type='button'>
         <div
           className={`text-transparent bg-clip-text bg-gradient-to-r capitalize cursor-pointer hover:text-money-green font-Inter text-lg font-bold tracking-wide ${
-            isShow ? 'text-money-green' : 'from-white to-white'
+            isShow ? 'text-money-green' : 'from-primary to-primary'
           }`}
           onClick={(e) => {
             e.preventDefault();

@@ -1,8 +1,10 @@
 import React from 'react';
+import ProfileImageUpload from './ProfileImageUpload';
 
 const Information = () => {
   return (
     <div className='md:w-4/12'>
+      <ProfileImageUpload />
       <div className='p-8 shadow-lg shadow-slate-400 mr-2 text-xl rounded-md'>
         <div className='flex flex-col gap-y-1 '>
           <p>

@@ -56,7 +56,7 @@ const ITEMS = [
 
 const SocialLinks = () => {
   return (
-    <div className='bg-[#080321] pt-10 pb-5'>
+    <div className='bg-black pt-10 pb-5'>
       <div className='container mx-auto'>
         <ul className='flex justify-center gap-3'>
           {ITEMS.map((item) => (

@@ -27,16 +27,16 @@ const AuthMenu = () => {
         element={<Menus list={menusList} />}
       >
         <button
-          className={`text-transparent bg-clip-text bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 font-Inter border rounded-full px-5 py-2 font-bold tracking-widest  flex items-center cursor-pointer transition-all duration-300 ${
-            isShow ? 'from-purple-400 to-pink-600' : 'from-white to-white'
+          className={`text-transparent bg-clip-text bg-gradient-to-r hover:text-money-green font-Inter border rounded-full px-5 py-2 font-bold tracking-widest  flex items-center cursor-pointer transition-all duration-300 ${
+            isShow ? 'text-money-green' : 'from-white to-white'
           }`}
           type='button'
           onClick={() => setIsShow(!isShow)}
         >
           Sign In
           <p
-            className={`hover:text-pink-600" ${
-              isShow ? 'text-pink-600' : 'text-white'
+            className={`hover:text-money-green ${
+              isShow ? 'text-money-green' : 'text-white'
             }`}
           >
             <FaAngleDown className='ml-2' />

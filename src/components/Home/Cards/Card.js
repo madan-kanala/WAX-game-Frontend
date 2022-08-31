@@ -5,13 +5,21 @@ const Card = (props) => {
   return (
     <div className='w-1/3 2xl:w-1/4'>
       <div className='mx-2'>
+<<<<<<< HEAD
         <div class='max-w-sm bg-gray-700 text-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 cursor-pointer'>
+=======
+        <div class='max-w-sm bg-olive  rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 cursor-pointer'>
+>>>>>>> bdcb0f73fb227be80448ed34d39db386cc1d7188
           <div className='h-[200px] rounded-t-lg overflow-hidden'>
             <img src={image} alt='' className='w-full h-full object-contain' />
           </div>
           <div class='p-5'>
             <Link to='/'>
+<<<<<<< HEAD
               <h5 class='mb-2 text-lg font-bold tracking-tight text-white dark:text-white'>
+=======
+              <h5 class='mb-2 text-lg font-bold tracking-tight text-black dark:text-white'>
+>>>>>>> bdcb0f73fb227be80448ed34d39db386cc1d7188
                 {title}
               </h5>
             </Link>

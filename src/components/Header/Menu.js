@@ -20,7 +20,7 @@ const Menu = () => {
 
 const Item = ({ text, url }) => {
   return (
-    <li className='text-transparent bg-clip-text bg-gradient-to-r from-white to-white capitalize cursor-pointer hover:from-purple-400 hover:to-pink-600 font-Inter text-lg font-semibold tracking-wide'>
+    <li className='text-transparent bg-clip-text bg-gradient-to-r from-white to-white capitalize cursor-pointer hover:from-purple-400 hover:to-pink-600 font-Inter text-lg font-semibold tracking-wide hover:text-money-green'>
       <Link to={url} style={{ all: 'inherit' }}>
         {text}
       </Link>

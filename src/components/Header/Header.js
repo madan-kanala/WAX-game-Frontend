@@ -5,7 +5,7 @@ import Menu from './Menu';
 
 const Header = ({ isTransparent = false }) => {
   return (
-    <div className={`${isTransparent ? 'bg-transparent' : 'bg-[#080321]'}`}>
+    <div className={`${isTransparent ? 'bg-transparent' : 'bg-black'}`}>
       <div className='mx-10'>
         <div className='flex justify-between items-center'>
           <Logo />

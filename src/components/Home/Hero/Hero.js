@@ -2,7 +2,7 @@ import React from 'react';
 import Content from './Content';
 const Hero = () => {
   return (
-    <div style={{ background: `#000`, minHeight: '100vh' }}>
+    <div className='bg-black min-h-screen md:min-h-max'>
       <Content />
     </div>
   );

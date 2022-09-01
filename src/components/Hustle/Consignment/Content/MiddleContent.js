@@ -4,7 +4,7 @@ const MiddleContent = () => {
   return (
     <div className='md:w-4/12 w-full order-1 mb-5 md:mb-0 md:order-2 '>
       <div className='mt-5 flex justify-center items-center'>
-        <div className='xl:w-1/2'>
+        <div className='xl:w-1/2 md:mt-24'>
           <p className='font-semibold text-lg text-olive mb-1 text-center'>
             Enter Amount
           </p>

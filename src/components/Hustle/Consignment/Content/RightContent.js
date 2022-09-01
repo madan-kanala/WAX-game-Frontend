@@ -2,7 +2,10 @@ import React from 'react';
 
 const RightContent = () => {
   return (
-    <div className='mt-12 md:w-4/12 order-3'>
+    <div className='mt-12 md:mt-0 md:w-4/12 order-3 '>
+      <h2 className='text-center text-olive text-3xl mb-3 font-bold'>
+        Gang Member
+      </h2>
       <div className='border mx-3 p-8 rounded-md bg-olive'>
         <div className='flex flex-wrap gap-y-6 '>
           <Item text={'Gang Hire'} />

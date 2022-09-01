@@ -5,7 +5,7 @@ import RightContent from './RightContent';
 const Content = () => {
   return (
     <div>
-      <div className='flex flex-col md:flex-row items-center pb-6'>
+      <div className='flex flex-col md:flex-row items-start pb-6'>
         <LeftContent />
         <MiddleContent />
         <RightContent />

@@ -4,6 +4,9 @@ const LeftContent = () => {
   return (
     <div className='md:w-4/12 order-2 md:order-1'>
       <div className='box-border mx-4  pb-4 '>
+        <h2 className='text-center text-olive text-3xl mb-3 font-bold'>
+          Gang Member
+        </h2>
         <div className='text-center box-border py-8 px-3 border rounded-md bg-olive'>
           <p className='text-lg font-bold font-Inter'>
             NFT Staking area (single slot) this nft cannot be unstaked

@@ -4,7 +4,7 @@ import Top from './Top';
 
 const Consignment = () => {
   return (
-    <div className='py-20'>
+    <div className='bg-black py-4 md:min-h-screen'>
       <div className='container mx-auto '>
         <Top />
         <Content />

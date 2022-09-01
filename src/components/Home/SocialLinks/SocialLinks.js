@@ -11,6 +11,20 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+const SocialLinks = () => {
+  return (
+    <div className='bg-black border-t border-olive pt-10 pb-5'>
+      <div className='container mx-auto'>
+        <ul className='flex justify-center gap-3 flex-wrap'>
+          {ITEMS.map((item) => (
+            <Item key={Math.random()} element={item.icon} url={item.url} />
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
 const ITEMS = [
   {
     url: '/',
@@ -53,20 +67,6 @@ const ITEMS = [
     icon: <FaBehance />,
   },
 ];
-
-const SocialLinks = () => {
-  return (
-    <div className='bg-black border-t border-olive pt-10 pb-5'>
-      <div className='container mx-auto'>
-        <ul className='flex justify-center gap-3'>
-          {ITEMS.map((item) => (
-            <Item key={Math.random()} element={item.icon} url={item.url} />
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-};
 
 const randomColor = () => {
   const COLORS = [

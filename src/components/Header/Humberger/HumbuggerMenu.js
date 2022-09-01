@@ -5,7 +5,7 @@ import 'react-modern-drawer/dist/index.css';
 import useInnerSize from '../../../hooks/useInnerSize';
 import Menu from './Menu';
 const HumbuggerMenu = () => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };

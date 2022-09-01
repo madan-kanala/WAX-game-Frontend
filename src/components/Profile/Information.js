@@ -13,7 +13,7 @@ const Information = () => {
           <div className='w-4/12'>
             <div className='w-full aspect-square rounded overflow-hidden pr-3'>
               <img
-                class='w-full he-full object-cover'
+                className='w-full he-full object-cover'
                 src={image}
                 alt='Extra large avatar'
               />

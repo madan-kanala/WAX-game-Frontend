@@ -8,7 +8,10 @@ const Information = () => {
   return (
     <div className='md:w-4/12 mb-4 md:mb-0'>
       <ProfileImageUpload />
-      <div className='p-8 bg-olive mr-2 text-xl rounded-md mx-2'>
+      <div
+        className='p-8 bg-olive mr-2 text-xl rounded-md mx-2 '
+        style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
+      >
         <div className='flex'>
           <div className='w-4/12'>
             <div className='w-full aspect-square rounded overflow-hidden pr-3'>

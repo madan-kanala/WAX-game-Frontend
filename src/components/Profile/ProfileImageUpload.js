@@ -2,7 +2,10 @@ import React from 'react';
 
 const ProfileImageUpload = ({ setImage }) => {
   return (
-    <div className='mx-2 mb-4 bg-olive p-4 rounded-md'>
+    <div
+      className='mx-2 mb-4 bg-olive p-4 rounded-md'
+      style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
+    >
       <div className='mb-2'>
         <label
           for='file'

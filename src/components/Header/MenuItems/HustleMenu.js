@@ -32,7 +32,7 @@ const HustleMenu = () => {
     <DropDown
       isShow={isShow}
       onClose={setIsShow}
-      element={<Menus list={menusList} />}
+      element={<Menus list={menusList} onSubmit={setIsShow} />}
     >
       <div type='button'>
         <div

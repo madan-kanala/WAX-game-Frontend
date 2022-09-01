@@ -24,7 +24,7 @@ const AuthMenu = () => {
       <DropDown
         isShow={isShow}
         onClose={setIsShow}
-        element={<Menus list={menusList} />}
+        element={<Menus list={menusList} onSubmit={setIsShow} />}
       >
         <button
           className={`text-transparent bg-clip-text bg-gradient-to-r hover:text-money-green font-Inter border border-primary rounded-full px-5 py-2 font-bold tracking-widest  flex items-center cursor-pointer transition-all duration-300 ${

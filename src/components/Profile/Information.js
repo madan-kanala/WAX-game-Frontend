@@ -19,12 +19,12 @@ const Information = () => {
         </div>
         <div className='my-4'>
           <span className='font-bold'> Stats: </span>
-          <span className='text-base'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          <div className='text-base h-12'>
+            {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Consequatur temporibus voluptates numquam fugiat labore alias eum,
             suscipit provident, sequi nam asperiores obcaecati veritatis
-            quibusdam quod quas similique accusantium facilis est!
-          </span>
+            quibusdam quod quas similique accusantium facilis est! */}
+          </div>
         </div>
         <div className='mt-2'>
           <p>

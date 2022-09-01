@@ -7,7 +7,7 @@ const ProfileTable = () => {
       <div className='mx-2'>
         <div class='overflow-x-auto relative w-full border rounded-md'>
           <table class='w-full text-sm text-left text-gray-500 dark:text-gray-400 table '>
-            <thead class='text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+            <thead class='text-sm text-gray-700 uppercase bg-olive dark:bg-gray-700 dark:text-gray-400'>
               <tr>
                 <th scope='col' class='py-3 px-6 w-2/12'>
                   Activation Cost
@@ -34,7 +34,7 @@ const ProfileTable = () => {
 
 const Item = ({ bonus, count }) => {
   return (
-    <tr class='bg-white border-b dark:bg-gray-800 dark:border-gray-700 w-full'>
+    <tr class='bg-gray-100 border-b dark:bg-gray-800 dark:border-gray-700 w-full'>
       <td class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
         <button
           type='button'

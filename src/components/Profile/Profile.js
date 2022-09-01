@@ -4,7 +4,7 @@ import ProfileTable from './ProfileTable';
 
 const Profile = () => {
   return (
-    <div>
+    <div className=''>
       <div className='md:flex'>
         <Information />
         <ProfileTable />

@@ -4,7 +4,7 @@ import HustleMenu from './MenuItems/HustleMenu';
 import ShopMenu from './MenuItems/ShopMenu';
 const Menu = () => {
   return (
-    <div>
+    <div className='hidden md:block'>
       <ul className='flex gap-6'>
         <Item text={'home'} url='/' />
         <Item text={'Profile'} url='/profile' />

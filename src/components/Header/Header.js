@@ -1,5 +1,6 @@
 import React from 'react';
 import AuthMenu from './AuthMenu';
+import HumbuggerMenu from './Humberger/HumbuggerMenu';
 import Logo from './Logo';
 import Menu from './Menu';
 
@@ -11,6 +12,7 @@ const Header = ({ isTransparent = false }) => {
           <Logo />
           <Menu />
           <AuthMenu />
+          <HumbuggerMenu />
         </div>
       </div>
     </div>

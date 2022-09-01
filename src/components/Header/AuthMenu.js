@@ -20,7 +20,7 @@ const AuthMenu = () => {
 
   const ref = useDetectClickOutside({ onTriggered: () => setIsShow(false) });
   return (
-    <div className='text-white' ref={ref}>
+    <div className='text-white hidden md:block' ref={ref}>
       <DropDown
         isShow={isShow}
         onClose={setIsShow}

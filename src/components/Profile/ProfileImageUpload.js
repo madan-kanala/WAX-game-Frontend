@@ -3,7 +3,7 @@ import React from 'react';
 const ProfileImageUpload = ({ setImage }) => {
   return (
     <div
-      className='mx-2 mb-4 bg-gray-900 p-4 rounded-md'
+      className='mx-2 mb-4 bg-black p-4 rounded-md'
       style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
     >
       <div className='mb-2'>
@@ -16,7 +16,7 @@ const ProfileImageUpload = ({ setImage }) => {
         <input
           type='file'
           id='file'
-          className='bg-gray-700 text-olive text-sm rounded-lg focus:ring-blue-500  block w-full p-2.5 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 '
+          className='bg-gray-900 text-olive text-sm rounded-lg focus:ring-blue-500  block w-full p-2.5 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 '
           onChange={(e) => {
             setImage(URL.createObjectURL(e.target.files[0]));
           }}

@@ -9,7 +9,7 @@ const ProfileTable = () => {
           className='overflow-x-auto relative w-full border border-gray-700 rounded-md '
           style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
         >
-          <div className='bg-gray-900 text-olive text-center py-2'>
+          <div className='bg-black text-olive text-center py-2'>
             <h2 className='text-2xl mb-2 md:text-3xl font-bold'>
               G rank mission
             </h2>
@@ -18,7 +18,7 @@ const ProfileTable = () => {
             </p>
           </div>
           <table className='w-full text-sm text-left text-olive dark:text-gray-400 table '>
-            <thead className='text-sm  uppercase text-olive bg-gray-900 dark:bg-gray-700 dark:text-gray-400 border-t border-gray-700'>
+            <thead className='text-sm  uppercase text-olive bg-black dark:bg-gray-700 dark:text-gray-400 border-t border-gray-700'>
               <tr>
                 <th scope='col' className='py-3 px-6 w-1/12'></th>
                 <th scope='col' className='py-3 px-6 w-2/12'>

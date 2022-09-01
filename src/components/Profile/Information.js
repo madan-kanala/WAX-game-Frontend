@@ -9,7 +9,7 @@ const Information = () => {
     <div className='md:w-4/12 mb-4 md:mb-0'>
       <ProfileImageUpload />
       <div
-        className='p-8 bg-gray-900 mr-2 text-xl rounded-md mx-2 '
+        className='p-8 bg-black mr-2 text-xl rounded-md mx-2 '
         style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
       >
         <div className='flex'>

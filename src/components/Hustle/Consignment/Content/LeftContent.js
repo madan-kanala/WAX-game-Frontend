@@ -28,6 +28,19 @@ const LeftContent = () => {
             </button>
           </div>
         </div>
+        <div className='mt-5 flex justify-center items-center'>
+          <div className='xl:w-1/2'>
+            <p className='font-semibold text-xl text-center text-primary'>
+              Bail Cost (HCC)
+            </p>
+            <button className='bg-blue-500 px-5 py-2.5 my-3 rounded-md block w-full'>
+              6000
+            </button>
+            <button className='bg-money-green px-5 py-2.5 rounded-md block w-full'>
+              Pay Bill
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

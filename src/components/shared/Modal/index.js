@@ -10,6 +10,11 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     width: '450px',
     padding: 0,
+    borderColor: 'transparent',
+    backgroundColor: 'transparent',
+  },
+  overlay: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
   },
 };
 

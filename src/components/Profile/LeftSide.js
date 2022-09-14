@@ -1,6 +1,6 @@
 import React from 'react';
 import Information from './Information';
-import StakeCard from './StakeCard';
+import StakeCard from './StakeCard/StakeCard';
 
 const LeftSide = () => {
   return (

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AddForm from './AddForm';
 
 const StakeCard = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <div className='rounded-md mx-2 mt-10 '>
@@ -37,7 +37,7 @@ const StakeCard = () => {
         </div>
       </div>
 
-      <AddForm setIsOpen={setIsOpen} isOpen={setIsOpen} />
+      <AddForm setIsOpen={setIsOpen} isOpen={isOpen} />
     </div>
   );
 };

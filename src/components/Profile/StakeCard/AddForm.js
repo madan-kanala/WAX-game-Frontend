@@ -5,7 +5,7 @@ const AddForm = ({ isOpen, setIsOpen }) => {
   return (
     <Modal
       isOpen={isOpen}
-      onRequestClose={() => setIsOpen(true)}
+      onRequestClose={() => setIsOpen(false)}
       //   className='w-8/12'
     >
       <div className='w-full bg-blue-400 p-5'>

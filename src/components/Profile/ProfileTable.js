@@ -56,9 +56,9 @@ const Item = ({ bonus, count, index }) => {
       <td className='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
         <button
           type='button'
-          className='text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 font-medium rounded-lg text-sm px-3 py-1 mr-2 mb-2 dark:bg-violet-600 dark:hover:bg-violet-700 focus:outline-none dark:focus:ring-violet-800'
+          className='btn-default font-medium rounded-lg mr-2 mb-2 '
         >
-          Unlock 5 HCC
+          Unlock
         </button>
       </td>
       <td class='py-4 px-6'>
@@ -67,7 +67,7 @@ const Item = ({ bonus, count, index }) => {
       </td>
       <td class='py-4 px-6 w-6/12'>
         <div className='w-full bg-gray-200 rounded-full dark:bg-gray-700'>
-          <div className='bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 py-1 leading-none rounded-full w-full'>
+          <div className='bg-money-green text-xs font-medium text-black text-center p-0.5 py-1 leading-none rounded-full w-full'>
             {count}
           </div>
         </div>

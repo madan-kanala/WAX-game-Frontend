@@ -6,7 +6,3 @@
 body {
   @apply font-Inter;
 }
-
-.btn-default {
-  @apply bg-gradient-to-b  from-gray-700 to-black  border text-olive border-money-green px-3 py-1.5;
-}

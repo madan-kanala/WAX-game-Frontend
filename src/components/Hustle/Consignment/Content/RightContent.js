@@ -6,7 +6,7 @@ const RightContent = () => {
       <h2 className='text-center text-olive text-3xl mb-3 font-bold'>
         Active Boosts
       </h2>
-      <div className='border mx-3 p-8 rounded-md bg-olive'>
+      <div className='border mx-3 p-8 rounded-md bg-olive h-80 overflow-y-auto'>
         <div className='flex flex-wrap gap-y-6 '>
           <Item text={'Gang Hire'} />
           <Item text={'Get Out Of Jail'} />

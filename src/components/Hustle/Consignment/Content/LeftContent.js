@@ -7,7 +7,7 @@ const LeftContent = () => {
         <h2 className='text-center text-olive text-3xl mb-3 font-bold'>
           Gang Member
         </h2>
-        <div className='text-center box-border py-8 px-3 border rounded-md bg-olive'>
+        <div className='text-center box-border py-8 px-3 border rounded-md bg-olive h-64 overflow-y-auto'>
           <p className='text-lg font-bold font-Inter'>
             NFT Staking area (single slot) this nft cannot be unstaked
           </p>

@@ -56,7 +56,7 @@ const Item = ({ bonus, count, index }) => {
       <td className='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
         <button
           type='button'
-          className='btn-default font-medium rounded-lg mr-2 mb-2 '
+          className='btn btn-profile font-medium rounded-lg mr-2 mb-2 '
         >
           Unlock
         </button>

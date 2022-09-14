@@ -8,7 +8,7 @@ const StakeCard = () => {
       <div className='rounded-md mx-2 mt-10 '>
         <div className='flex justify-end mr-2 mb-2'>
           <button
-            className='btn-default mt-3 rounded'
+            className='btn btn-profile mt-3 rounded'
             onClick={() => setIsOpen(true)}
           >
             Add Slot
@@ -35,7 +35,9 @@ const StakeCard = () => {
               <p>100</p>
             </div>
             <div className='flex justify-center'>
-              <button className='btn-default mt-3 rounded-md'>Collect</button>
+              <button className='btn btn-profile mt-3 border-[#d3ddb3] rounded-md'>
+                Collect
+              </button>
             </div>
           </div>
         </div>

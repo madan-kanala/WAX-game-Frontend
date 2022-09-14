@@ -1,0 +1,9 @@
+.btn {
+  @apply px-3 py-1.5;
+}
+.btn-default {
+  @apply bg-gradient-to-b from-gray-700 to-black  border text-olive border-money-green;
+}
+.btn-profile {
+  @apply bg-gradient-to-b from-gray-700 to-black border text-olive border-[#d3ddb3];
+}

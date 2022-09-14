@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from './data1.json';
+import UnlockModal from './Unlock/UnlockModal';
 
 const ProfileTable = () => {
   return (
@@ -50,29 +51,33 @@ const ProfileTable = () => {
 };
 
 const Item = ({ bonus, count, index }) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <tr className='bg-gray-800 border-b border-gray-700 dark:bg-gray-800 dark:border-gray-700 w-full'>
-      <td className='text-center'>M{index}</td>
-      <td className='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
-        <button
-          type='button'
-          className='btn btn-profile font-medium rounded-lg mr-2 mb-2 '
-        >
-          Unlock
-        </button>
-      </td>
-      <td class='py-4 px-6'>
-        {bonus > 0 ? `+` : ''}
-        {bonus}%
-      </td>
-      <td class='py-4 px-6 w-6/12'>
-        <div className='w-full bg-gray-200 rounded-full dark:bg-gray-700'>
-          <div className='bg-money-green text-xs font-medium text-black text-center p-0.5 py-1 leading-none rounded-full w-full'>
-            {count}
+    <>
+      <UnlockModal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <tr className='bg-gray-800 border-b border-gray-700 dark:bg-gray-800 dark:border-gray-700 w-full'>
+        <td className='text-center'>M{index}</td>
+        <td className='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
+          <button
+            className='btn btn-profile font-medium rounded-lg mr-2 mb-2 '
+            onClick={() => setIsOpen(true)}
+          >
+            Unlock
+          </button>
+        </td>
+        <td class='py-4 px-6'>
+          {bonus > 0 ? `+` : ''}
+          {bonus}%
+        </td>
+        <td class='py-4 px-6 w-6/12'>
+          <div className='w-full bg-gray-600 rounded-full dark:bg-gray-700'>
+            <div className='bg-profile-green text-xs font-medium text-black text-center p-0.5 py-1 leading-none rounded-full w-8/12'>
+              {count}
+            </div>
           </div>
-        </div>
-      </td>
-    </tr>
+        </td>
+      </tr>
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 import Modal from '../../shared/Modal';
 
-const AddForm = ({ isOpen, setIsOpen }) => {
+const UnlockModal = ({ isOpen, setIsOpen }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -16,7 +16,7 @@ const AddForm = ({ isOpen, setIsOpen }) => {
         <form>
           <div className='flex justify-between items-center mb-2'>
             <h2 className='px-5 py-2 font-Inter text-center text-2xl font-bold text-olive'>
-              Add Slot
+              Unlock Bonus
             </h2>
             <FaTimes
               className='text-olive text-2xl block hover:cursor-pointer'
@@ -70,7 +70,7 @@ const AddForm = ({ isOpen, setIsOpen }) => {
             </div>
           </div>
           <div className='flex justify-center mt-5'>
-            <button className='btn btn-profile rounded'>Add Slot</button>
+            <button className='btn btn-profile rounded'>Upgrade</button>
           </div>
         </form>
       </div>
@@ -78,4 +78,4 @@ const AddForm = ({ isOpen, setIsOpen }) => {
   );
 };
 
-export default AddForm;
+export default UnlockModal;

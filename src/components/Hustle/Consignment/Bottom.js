@@ -7,10 +7,10 @@ const Bottom = () => {
         <div className='mt-5 flex justify-center items-center'>
           <div className='w-full'>
             <p className='font-semibold text-xl text-center text-primary'>
-              Collected Point
+              Collected HCC:
             </p>
             <button className='btn btn-default px-5 py-2.5 rounded-md block w-full'>
-              1000 HDC
+              Collect rewards
             </button>
           </div>
         </div>

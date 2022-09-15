@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import AddForm from './AddForm';
 
 const RightContent = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='mt-12 md:mt-0 md:w-4/12 order-3 '>
       <div className='flex justify-between mb-2 items-center'>
         <h2 className='text-center text-olive text-xl ml-4 font-bold'>
           Active Boosts
         </h2>
-        <p className='btn btn-default rounded-md text-sm'>Add Slot</p>
+        <p
+          className='btn btn-default rounded-md text-sm cursor-pointer'
+          onClick={() => setIsOpen(true)}
+        >
+          Add Slot
+        </p>
       </div>
       <div className='border mx-3 p-8 rounded-md bg-olive h-80 overflow-y-auto'>
         <div className='flex flex-wrap gap-y-6 '>
@@ -17,6 +24,7 @@ const RightContent = () => {
           <Item text={'Production Boost'} />
         </div>
       </div>
+      <AddForm setIsOpen={setIsOpen} isOpen={isOpen} />
     </div>
   );
 };

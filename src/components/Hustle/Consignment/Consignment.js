@@ -1,4 +1,5 @@
 import React from 'react';
+import Bottom from './Bottom';
 import Content from './Content';
 import Top from './Top';
 
@@ -8,6 +9,7 @@ const Consignment = () => {
       <div className='container mx-auto '>
         <Top />
         <Content />
+        <Bottom />
       </div>
     </div>
   );

@@ -3,9 +3,12 @@ import React from 'react';
 const RightContent = () => {
   return (
     <div className='mt-12 md:mt-0 md:w-4/12 order-3 '>
-      <h2 className='text-center text-olive text-3xl mb-3 font-bold'>
-        Active Boosts
-      </h2>
+      <div className='flex justify-between mb-2 items-center'>
+        <h2 className='text-center text-olive text-xl ml-4 font-bold'>
+          Active Boosts
+        </h2>
+        <p className='btn btn-default rounded-md text-sm'>Add Slot</p>
+      </div>
       <div className='border mx-3 p-8 rounded-md bg-olive h-80 overflow-y-auto'>
         <div className='flex flex-wrap gap-y-6 '>
           <Item text={'Gang Hire'} />

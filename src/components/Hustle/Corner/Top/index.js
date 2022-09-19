@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image1 from '../../../../assets/images/hustle/the-corner.png';
+import image1 from '../../../../assets/images/hustle/corner.png';
 import ReUpForm from './ReupForm';
 
 const Top = () => {

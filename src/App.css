@@ -2,7 +2,7 @@
   @apply px-3 py-1.5 cursor-pointer;
 }
 .btn-default {
-  @apply bg-gradient-to-b from-gray-700 to-black  border text-olive border-money-green;
+  @apply bg-gradient-to-b from-gray-700 to-black  border text-olive border-profile-green;
 }
 .btn-profile {
   @apply bg-gradient-to-b from-gray-700 to-black border text-olive border-profile-green;

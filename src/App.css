@@ -7,3 +7,7 @@
 .btn-profile {
   @apply bg-gradient-to-b from-gray-700 to-black border text-olive border-profile-green;
 }
+
+.custom-shadow {
+  box-shadow: '#a5a5a5eb 0px 0px 9px 0px';
+}

@@ -3,7 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import Modal from '../../../../shared/Modal';
 import UpgradeForm from './UpgradeForm';
 
-const ModalMenu = ({ isOpen, setIsOpen }) => {
+const ModalMenu = ({ isOpen, setIsOpen, startUpgradeTimer }) => {
   const [isUpGradeOpen, setIsUpgradeOpen] = useState(false);
   return (
     <>
@@ -51,7 +51,11 @@ const ModalMenu = ({ isOpen, setIsOpen }) => {
           </div>
         </div>
       </Modal>
-      <UpgradeForm isOpen={isUpGradeOpen} setIsOpen={setIsUpgradeOpen} />
+      <UpgradeForm
+        isOpen={isUpGradeOpen}
+        setIsOpen={setIsUpgradeOpen}
+        startUpgradeTimer={startUpgradeTimer}
+      />
     </>
   );
 };

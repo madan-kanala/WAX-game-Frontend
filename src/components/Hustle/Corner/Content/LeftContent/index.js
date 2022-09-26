@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddForm from './AddForm';
+import Character from './Character';
 import ModalMenu from './ModalMenu';
 
 const LeftContent = () => {
@@ -19,26 +20,14 @@ const LeftContent = () => {
             Add Slot
           </p>
         </div>
-
-        <div className='text-center box-border py-8 px-3 border rounded-md bg-olive h-80 overflow-y-auto'>
-          <div className='flex justify-center gap-4'>
-            {[1, 2].map((i) => (
-              <div
-                className='w-60 h-60 cursor-pointer'
-                onClick={() => setIsMenOpen(true)}
-                key={i}
-              >
-                <img
-                  src='https://images.pexels.com/photos/102100/pexels-photo-102100.jpeg?auto=compress&cs=tinysrgb&w=1600'
-                  className='w-full h-full object-contain'
-                  alt=''
-                />
-              </div>
+        <div className='text-center box-border py-8 px-3 border rounded-md h-80 overflow-y-auto overflow-x-hidden p-8 bg-black mr-2 custom-shadow '>
+          <div className='flex justify-center gap-4 flex-wrap'>
+            {[1].map((i) => (
+              <Character key={i} />
             ))}
           </div>
         </div>
       </div>
-
       <AddForm setIsOpen={setIsFormOpen} isOpen={isFormOpen} />
       <ModalMenu setIsOpen={setIsMenOpen} isOpen={isMenOpen} />
     </div>

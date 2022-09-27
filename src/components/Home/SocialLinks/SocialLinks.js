@@ -9,7 +9,6 @@ import {
   FaTwitch,
   FaTwitter,
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 const SocialLinks = () => {
   return (
@@ -27,43 +26,35 @@ const SocialLinks = () => {
 
 const ITEMS = [
   {
-    url: '/',
+    url: 'facebook',
     icon: <FaFacebook />,
   },
   {
-    url: '/',
+    url: 'linkedin',
     icon: <FaLinkedinIn />,
   },
   {
-    url: '/',
+    url: 'instagram',
     icon: <FaInstagram />,
   },
   {
-    url: '/',
+    url: 'skype',
     icon: <FaSkype />,
   },
   {
-    url: '/',
+    url: 'twitter',
     icon: <FaTwitter />,
   },
   {
-    url: '/',
-    icon: <FaSkype />,
-  },
-  {
-    url: '/',
-    icon: <FaTwitter />,
-  },
-  {
-    url: '/',
+    url: 'telelgram',
     icon: <FaTelegramPlane />,
   },
   {
-    url: '/',
+    url: 'twitch',
     icon: <FaTwitch />,
   },
   {
-    url: '/',
+    url: 'behance',
     icon: <FaBehance />,
   },
 ];
@@ -128,12 +119,14 @@ const randomColor = () => {
 
 const Item = ({ element, url }) => {
   return (
-    <Link
-      to={url}
+    <a
+      target={'_blank'}
+      href={`https://www.google.com/search?q=${url}`}
       className={` ${randomColor()} rounded-full p-3 text-2xl text-white cursor-pointer`}
+      rel='noreferrer'
     >
       {element}
-    </Link>
+    </a>
   );
 };
 

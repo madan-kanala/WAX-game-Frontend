@@ -6,7 +6,15 @@ import { useDetectClickOutside } from 'react-detect-click-outside';
  * @param {isShow: boolean , onClose: function , element: menuElements, children: children} param0
  * @returns
  */
-const DropDown = ({ isShow, onClose, element, children }) => {
+const DropDown = (props) => {
+  const {
+    isShow,
+    onClose,
+    element,
+    children,
+    width = '176px',
+    left = 0,
+  } = props;
   const ref = useDetectClickOutside({ onTriggered: () => onClose(false) });
   return (
     <div ref={ref}>
@@ -15,7 +23,7 @@ const DropDown = ({ isShow, onClose, element, children }) => {
 
         <div
           id='dropdown'
-          className={`z-[9999] w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 block ${
+          className={`z-[9999] bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 block ${
             isShow ? 'block' : 'hidden'
           }`}
           style={{
@@ -23,6 +31,8 @@ const DropDown = ({ isShow, onClose, element, children }) => {
             inset: '0px auto auto 0px',
             margin: 0,
             transform: 'translate(-47px, 47px)',
+            width,
+            left,
           }}
         >
           {element}

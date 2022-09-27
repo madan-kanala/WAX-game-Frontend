@@ -15,16 +15,15 @@ const MENUS = [
 ];
 const GearMenus = () => {
   return (
-    <div class='p-4 text-sm text-gray-700 dark:text-gray-200'>
+    <div class='p-4 text-sm bg-black custom-shadow'>
       <div>
         <p>Select RPC EndPoint</p>
 
-        <select
-          id='countries'
-          class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-        >
+        <select id='countries' class='btn btn-default w-full rounded-md'>
           {MENUS.map(({ label, value }) => (
-            <option value={value}>{label}</option>
+            <option className='bg-black' value={value}>
+              {label}
+            </option>
           ))}
         </select>
       </div>

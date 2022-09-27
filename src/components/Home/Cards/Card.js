@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 const Card = (props) => {
-  const { title, price, image } = props;
+  const { title, price, image, id } = props;
   return (
     <div className=' w-full sm:w-1/2 md:w-1/3 2xl:w-1/4 mb-6  sm:mb-0'>
       <div className='mx-4 sm:mx-2'>
@@ -18,7 +18,7 @@ const Card = (props) => {
             <div className='flex justify-between items-center mt-5'>
               <p>${price}</p>
               <Link
-                to='/'
+                to={`/item/${id}`}
                 className='inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800'
               >
                 View Asset

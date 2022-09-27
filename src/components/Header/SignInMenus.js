@@ -1,16 +1,25 @@
 import React from 'react';
+import {
+  FaAdn,
+  FaAffiliatetheme,
+  FaAutoprefixer,
+  FaChevronRight,
+} from 'react-icons/fa';
 const MENUS = [
   {
     value: '1',
-    label: 'wax1.greymass.com',
+    text: 'wax1.greymass.com',
+    icon: <FaAdn />,
   },
   {
     value: '2',
-    label: 'wax2.greymass.com',
+    text: 'wax2.greymass.com',
+    icon: <FaAffiliatetheme />,
   },
   {
     value: '3',
-    label: 'wax3.greymass.com',
+    text: 'wax3.greymass.com',
+    icon: <FaAutoprefixer />,
   },
 ];
 const SignInMenus = () => {
@@ -19,14 +28,23 @@ const SignInMenus = () => {
       <div>
         <p>Please Select your wallet to login</p>
 
-        <select
-          id='countries'
-          class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-        >
-          {MENUS.map(({ label, value }) => (
-            <option value={value}>{label}</option>
+        <div className='mt-4'>
+          {MENUS.map((i) => (
+            <Item key={Math.random()} text={i.text} icon={i.icon} />
           ))}
-        </select>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Item = ({ icon, text }) => {
+  return (
+    <div className='flex justify-between items-center bg-indigo-900 mb-5 pr-3 rounded-md overflow-hidden'>
+      <div className='bg-blue-500 text-white py-3 px-3 text-xl'>{icon}</div>
+      <p className='text-white'>{text}</p>
+      <div className='text-white'>
+        <FaChevronRight />
       </div>
     </div>
   );

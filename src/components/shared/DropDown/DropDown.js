@@ -18,7 +18,7 @@ const DropDown = (props) => {
   const ref = useDetectClickOutside({ onTriggered: () => onClose(false) });
   return (
     <div ref={ref}>
-      <div className='relative'>
+      <div className='relative  '>
         {children}
 
         <div
@@ -33,6 +33,7 @@ const DropDown = (props) => {
             transform: 'translate(-47px, 47px)',
             width,
             left,
+            top: 10,
           }}
         >
           {element}

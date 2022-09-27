@@ -32,7 +32,7 @@ const AuthMenu = () => {
             type='button'
             onClick={() => setIsShowAuthMenu(!isShowAuthMenu)}
           >
-            Sign In
+            Login
           </button>
         </DropDown>
       </div>

@@ -1,30 +1,28 @@
 import React from 'react';
-import {
-  FaAdn,
-  FaAffiliatetheme,
-  FaAutoprefixer,
-  FaChevronRight,
-} from 'react-icons/fa';
+import { FaChevronRight } from 'react-icons/fa';
+import ANCHOR_WALLET from '../../assets/images/wallet/ANCHOR_WALLET.png';
+import WAX_CLOUD_WALLET from '../../assets/images/wallet/WAX_CLOUD_WALLET.png';
+import WOMBAT_WALLET from '../../assets/images/wallet/WOMBAT_WALLET.png';
 const MENUS = [
   {
     value: '1',
-    text: 'wax1.greymass.com',
-    icon: <FaAdn />,
+    text: 'Anchor Wallet',
+    icon: ANCHOR_WALLET,
   },
   {
     value: '2',
-    text: 'wax2.greymass.com',
-    icon: <FaAffiliatetheme />,
+    text: 'Anchor Cloud Wallet',
+    icon: WAX_CLOUD_WALLET,
   },
   {
     value: '3',
-    text: 'wax3.greymass.com',
-    icon: <FaAutoprefixer />,
+    text: 'Wombat Wallet',
+    icon: WOMBAT_WALLET,
   },
 ];
 const SignInMenus = () => {
   return (
-    <div class='p-4 text-sm text-gray-700 dark:text-gray-200'>
+    <div class='p-4 text-sm text-olive bg-black custom-shadow'>
       <div>
         <p>Please Select your wallet to login</p>
 
@@ -40,12 +38,25 @@ const SignInMenus = () => {
 
 const Item = ({ icon, text }) => {
   return (
-    <div className='flex justify-between items-center bg-indigo-900 mb-5 pr-3 rounded-md overflow-hidden'>
-      <div className='bg-blue-500 text-white py-3 px-3 text-xl'>{icon}</div>
+    <div className='flex justify-between items-center btn btn-default mb-5 pr-3 rounded-md overflow-hidden py-1 pl-2 hover:cursor-pointer'>
+      <IconImage url={icon} />
       <p className='text-white'>{text}</p>
       <div className='text-white'>
         <FaChevronRight />
       </div>
+    </div>
+  );
+};
+
+const IconImage = ({ url }) => {
+  return (
+    <div className='w-10 h-10'>
+      <img
+        src={url}
+        className='w-full h-full object-contain'
+        alt=''
+        srcset=''
+      />
     </div>
   );
 };

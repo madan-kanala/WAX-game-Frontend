@@ -4,18 +4,7 @@ import { FaCog } from 'react-icons/fa';
 import DropDown from '../shared/DropDown/DropDown';
 import GearMenus from './GearMenus';
 import SignInMenus from './SignInMenus';
-const menusList = [
-  {
-    id: 1,
-    label: 'RPC point selection',
-    url: '/rpc-point-selection',
-  },
-  {
-    id: 2,
-    label: 'Logout',
-    url: '/logout',
-  },
-];
+
 const AuthMenu = () => {
   const [isShowAuthMenu, setIsShowAuthMenu] = useState(false);
   const [isShow, setIsShow] = useState(false);

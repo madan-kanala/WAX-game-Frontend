@@ -19,7 +19,12 @@ const Hero = () => {
         <div className='mt-10'>
           <p className='text-lg'>Checkout our whitepaper</p>
           <div className='flex justify-center mt-4'>
-            <a href='/' className='w-10 h-10 block'>
+            <a
+              href='https://thehustlegame.gitbook.io/whitepaper/'
+              target={'_blank'}
+              className='w-10 h-10 block'
+              rel='noreferrer'
+            >
               <img
                 src={icon1}
                 alt=''

@@ -38,7 +38,7 @@ const SignInMenus = () => {
 
 const Item = ({ icon, text }) => {
   return (
-    <div className='flex justify-between items-center btn btn-default mb-5 pr-3 rounded-md overflow-hidden py-1 pl-2 hover:cursor-pointer'>
+    <div className='custom-shadow border-none flex justify-between items-center btn btn-default mb-5 pr-3 rounded-md overflow-hidden py-1 pl-2 hover:cursor-pointer'>
       <IconImage url={icon} />
       <p className='text-white'>{text}</p>
       <div className='text-white'>

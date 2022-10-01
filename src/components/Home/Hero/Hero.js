@@ -10,11 +10,11 @@ const Hero = () => {
             <img src={img1} alt='' className='w-full h-full object-contain' />
           </div>
         </div>
-        <h2 className='text-green-500 text-5xl font-bold'>
+        <h2 className='text-green-500 text-5xl font-bold capitalize'>
           Welcome To the Hustle
         </h2>
         <p className='text-olive text-xl mt-2'>
-          "The NFT game where no dream is to big"
+          "The NFT game where no dream is too big"
         </p>
         <div className='mt-10'>
           <p className='text-lg'>Checkout our whitepaper</p>

@@ -19,7 +19,10 @@ const GearMenus = () => {
       <div>
         <p>Select RPC EndPoint</p>
 
-        <select id='countries' class='btn btn-default w-full rounded-md'>
+        <select
+          id='countries'
+          class='btn btn-default w-full rounded-md custom-shadow border-none mt-3'
+        >
           {MENUS.map(({ label, value }) => (
             <option className='bg-black' value={value}>
               {label}

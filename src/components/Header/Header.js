@@ -10,8 +10,8 @@ const Header = ({ isTransparent = false }) => {
   return (
     <div
       className={`${isTransparent ? 'bg-transparent' : 'bg-black'} ${
-        pageYOffset > 100 ? 'fixed custom-shadow ' : ''
-      }  w-full top-0 z-50`}
+        pageYOffset > 100 ? 'fixed w-full top-0' : 'relative'
+      } z-50 custom-shadow`}
     >
       <div className='mx-10'>
         <div className='flex justify-between items-center'>

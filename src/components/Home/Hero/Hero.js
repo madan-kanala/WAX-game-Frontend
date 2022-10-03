@@ -10,7 +10,7 @@ const Hero = () => {
             <img src={img1} alt='' className='w-full h-full object-contain' />
           </div>
         </div>
-        <h2 className='text-primary text-5xl font-bold capitalize'>
+        <h2 className='text-money-green text-5xl font-bold capitalize'>
           Welcome To the Hustle
         </h2>
         <p className='text-primary text-xl mt-2'>

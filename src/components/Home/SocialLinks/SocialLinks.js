@@ -14,7 +14,7 @@ import {
 const SocialLinks = () => {
   return (
     <div className='bg-black pt-10 pb-5'>
-      <h2 className='text-olive mb-3 font-bold text-center text-4xl'>
+      <h2 className='text-primary mb-3 font-bold text-center text-4xl'>
         Follow Us
       </h2>
       <div className='container mx-auto'>

@@ -16,7 +16,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={`bg-black ${height > contentHeight ? 'min-h-screen' : ''}`}>
+    <div
+      className={`bg-black ${
+        height > contentHeight ? 'min-h-screen' : ''
+      } pt-12`}
+    >
       <div ref={ref}>
         <Hero />
         <SocialLinks />

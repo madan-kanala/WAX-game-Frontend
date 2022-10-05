@@ -1,8 +1,10 @@
+import Tippy from '@tippyjs/react';
 import React, { useState } from 'react';
+import { FaInfoCircle } from 'react-icons/fa';
 import data from './data1.json';
 import UnlockModal from './Unlock/UnlockModal';
 
-const ProfileTable = () => {
+const SafeHouseTable = () => {
   return (
     <div className='md:w-8/12'>
       <div className='mx-2 data122'>
@@ -11,11 +13,15 @@ const ProfileTable = () => {
           style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
         >
           <div className='bg-black text-olive text-center py-2'>
-            <h2 className='text-2xl mb-2 md:text-3xl font-bold'>
-              G rank mission
-            </h2>
-            <p className='text-xl mb-3'>
-              Complete and unlock the mission to gain bonus{' '}
+            <div className='flex justify-center gap-x-1'>
+              <h2 className='text-2xl mb-2 md:text-3xl font-bold'>
+                G rank mission
+              </h2>
+              <InfoIcon />
+            </div>
+            <p className='text-base mb-3'>
+              Complete the missions by collecting G Ranks and activating the
+              missions to gain bonus
             </p>
           </div>
           <table className='w-full text-sm text-left text-olive dark:text-gray-400 table '>
@@ -50,6 +56,23 @@ const ProfileTable = () => {
   );
 };
 
+const InfoIcon = () => (
+  <Tippy
+    content={
+      <span>
+        Each account can accrued up to +5% bonus reward for every location
+      </span>
+    }
+    popperOptions={{
+      placement: 'right',
+    }}
+  >
+    <p className='text-blue-500 text-xl'>
+      <FaInfoCircle />
+    </p>
+  </Tippy>
+);
+
 const Item = ({ bonus, count, index }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -62,7 +85,7 @@ const Item = ({ bonus, count, index }) => {
             className='btn btn-profile font-medium rounded-lg mr-2 mb-2 '
             onClick={() => setIsOpen(true)}
           >
-            Unlock
+            Active
           </button>
         </td>
         <td class='py-4 px-6'>
@@ -81,4 +104,4 @@ const Item = ({ bonus, count, index }) => {
   );
 };
 
-export default ProfileTable;
+export default SafeHouseTable;

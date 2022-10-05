@@ -1,5 +1,5 @@
 import React from 'react';
-import image1 from '../../assets/images/profile/profile v2.png';
+import image1 from '../../assets/images/hustle/safehouse.png';
 import LeftSide from './LeftSide';
 import SafeHouseTable from './SafeHouseTable';
 

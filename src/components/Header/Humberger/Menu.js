@@ -7,12 +7,11 @@ const Menu = () => {
     <div className='md:hidden pl-2 '>
       <ul className='gap-6'>
         <MenuItem text={'home'} url='/' />
-        <MenuItem text={'Profile'} url='/profile' />
+        <MenuItem text={'Safe House'} url='/safe-house' />
         <HustleMenu />
         <MenuItem text={'Drop Zone'} url='/drop-zone' />
         <ShopMenu />
         <MenuItem text={'Laundering'} url='/laundering' />
-        <MenuItem text={'Safe House'} url='/safe-house' />
       </ul>
     </div>
   );

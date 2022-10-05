@@ -1,6 +1,6 @@
 import React from 'react';
-import ProfileContent from '../components/Profile/Profile';
-const Profile = () => {
+import ProfileContent from '../components/SafeHouse/SafeHouse';
+const SafeHouse = () => {
   return (
     <div className='pt-12 pb-10 bg-black md:min-h-screen '>
       <div className='container mx-auto'>
@@ -10,4 +10,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default SafeHouse;

@@ -7,12 +7,11 @@ const Menu = () => {
     <div className='hidden md:block'>
       <ul className='flex gap-6'>
         <Item text={'home'} url='/' />
-        <Item text={'Profile'} url='/profile' />
+        <Item text={'Safe House'} url='/safe-house' />
         <HustleMenu />
         <Item text={'Drop Zone'} url='/drop-zone' />
         <ShopMenu />
         <Item text={'Laundering'} url='/laundering' />
-        <Item text={'Safe House'} url='/safe-house' />
       </ul>
     </div>
   );

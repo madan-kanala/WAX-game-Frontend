@@ -5,8 +5,7 @@ import Header from './components/Header/Header';
 import Corner from './components/Hustle/Corner';
 import Home from './pages/Home';
 import Consignment from './pages/Hustle/Consignment';
-
-import Profile from './pages/Profile';
+import SafeHouse from './pages/SafeHouse';
 
 const App = () => {
   return (
@@ -17,7 +16,7 @@ const App = () => {
           <div className='md:pt-20'>
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/profile' element={<Profile />} />
+              <Route path='/safe-house' element={<SafeHouse />} />
               <Route path='/consignment' element={<Consignment />} />
               <Route path='/the-corner' element={<Corner />} />
             </Routes>

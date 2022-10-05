@@ -1,9 +1,9 @@
 import React from 'react';
 import image1 from '../../assets/images/profile/profile v2.png';
 import LeftSide from './LeftSide';
-import ProfileTable from './ProfileTable';
+import SafeHouseTable from './SafeHouseTable';
 
-const Profile = () => {
+const SafeHouse = () => {
   return (
     <div className=''>
       <div className='img flex justify-center'>
@@ -11,10 +11,10 @@ const Profile = () => {
       </div>
       <div className='md:flex'>
         <LeftSide />
-        <ProfileTable />
+        <SafeHouseTable />
       </div>
     </div>
   );
 };
 
-export default Profile;
+export default SafeHouse;

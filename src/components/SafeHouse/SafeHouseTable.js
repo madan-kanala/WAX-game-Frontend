@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import data from './data1.json';
 import UnlockModal from './Unlock/UnlockModal';
 
-const ProfileTable = () => {
+const SafeHouseTable = () => {
   return (
     <div className='md:w-8/12'>
       <div className='mx-2 data122'>
@@ -81,4 +81,4 @@ const Item = ({ bonus, count, index }) => {
   );
 };
 
-export default ProfileTable;
+export default SafeHouseTable;

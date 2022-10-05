@@ -1,12 +1,16 @@
+import Tippy from '@tippyjs/react';
 import React, { useState } from 'react';
+import { FaInfoCircle } from 'react-icons/fa';
+import 'tippy.js/dist/tippy.css'; // optional
 import AddForm from './AddForm';
-
 const StakeCard = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <div className='rounded-md mx-2 mt-10 '>
-        <div className='flex justify-end mr-2 mb-2'>
+        <div className='flex justify-between items-center mr-2 mb-2'>
+          <p className='text-olive'>Safe/s: 1</p>
+          <InfoIcon />
           <button
             className='btn btn-profile mt-3 rounded'
             onClick={() => setIsOpen(true)}
@@ -47,5 +51,23 @@ const StakeCard = () => {
     </div>
   );
 };
+
+const InfoIcon = () => (
+  <Tippy
+    content={
+      <span>
+        The safe will available at G Rank 100 and by completing mission 1 of
+        Hustlers Club!
+      </span>
+    }
+    popperOptions={{
+      placement: 'right',
+    }}
+  >
+    <p className='text-blue-500 text-xl'>
+      <FaInfoCircle />
+    </p>
+  </Tippy>
+);
 
 export default StakeCard;

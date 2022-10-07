@@ -27,15 +27,17 @@ const SafeHouseTable = () => {
           <table className='w-full text-sm text-left text-olive dark:text-gray-400 table '>
             <thead className='text-sm  uppercase text-olive bg-black dark:bg-gray-700 dark:text-gray-400 border-t border-gray-700'>
               <tr>
-                <th scope='col' className='py-3 px-6 w-1/12'></th>
-                <th scope='col' className='py-3 px-6 w-2/12'>
+                <th scope='col' className='py-3 px-6 w-1/12'>
+                  Missions
+                </th>
+                <th scope='col' className='py-3 px-6 w-3/12'>
                   Activation Cost
                 </th>
                 <th scope='col' className='py-3 px-6 w-1/12'>
                   Bonus
                 </th>
                 <th scope='col' className='py-3 px-6'>
-                  G Rank Mission
+                  Current Progress
                 </th>
               </tr>
             </thead>
@@ -82,7 +84,7 @@ const Item = ({ bonus, count, index }) => {
         <td className='text-center'>M{index}</td>
         <td className='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
           <button
-            className='btn btn-profile font-medium rounded-lg mr-2 mb-2 '
+            className='btn btn-profile font-medium rounded-lg mr-2 mb-2 w-full'
             onClick={() => setIsOpen(true)}
           >
             Active

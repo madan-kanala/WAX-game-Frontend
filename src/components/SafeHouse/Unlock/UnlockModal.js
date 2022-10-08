@@ -23,7 +23,7 @@ const data = [
   },
 ];
 
-const UnlockModal = ({ isOpen, setIsOpen }) => {
+const UnlockModal = ({ isOpen, setIsOpen, activate, id }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -64,7 +64,15 @@ const UnlockModal = ({ isOpen, setIsOpen }) => {
             </div>
           </div>
           <div className='flex justify-center mt-5'>
-            <button className='btn btn-profile rounded'>Activate</button>
+            <button
+              className='btn btn-profile rounded'
+              onClick={() => {
+                setIsOpen(false);
+                activate(id);
+              }}
+            >
+              Activate
+            </button>
           </div>
         </>
       </div>

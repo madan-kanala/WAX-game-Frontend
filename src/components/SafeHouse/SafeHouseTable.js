@@ -5,6 +5,19 @@ import data from './data1.json';
 import UnlockModal from './Unlock/UnlockModal';
 
 const SafeHouseTable = () => {
+  const [items, setItems] = useState(data);
+
+  const activate = (id) => {
+    setItems((prev) => {
+      return prev.map((item) => {
+        if (item.id === id) {
+          return { ...item, isActivated: true };
+        }
+        return item;
+      });
+    });
+  };
+
   return (
     <div className='md:w-8/12'>
       <div className='mx-2 data122'>
@@ -42,12 +55,15 @@ const SafeHouseTable = () => {
               </tr>
             </thead>
             <tbody>
-              {data.map((item, index) => (
+              {items.map((item, index) => (
                 <Item
                   key={item.id}
+                  id={item.id}
                   bonus={item.bonus}
                   count={item.count}
                   index={index + 1}
+                  activate={activate}
+                  isActivated={item.isActivated}
                 />
               ))}
             </tbody>
@@ -75,11 +91,16 @@ const InfoIcon = () => (
   </Tippy>
 );
 
-const Item = ({ bonus, count, index }) => {
+const Item = ({ bonus, count, index, activate, isActivated, id }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <UnlockModal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <UnlockModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        activate={activate}
+        id={id}
+      />
       <tr className='bg-gray-800 border-b border-gray-700 dark:bg-gray-800 dark:border-gray-700 w-full'>
         <td className='text-center'>M{index}</td>
         <td className='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
@@ -87,7 +108,7 @@ const Item = ({ bonus, count, index }) => {
             className='btn btn-profile font-medium rounded-lg mr-2 mb-2 w-full'
             onClick={() => setIsOpen(true)}
           >
-            Active
+            {isActivated ? 'Active' : 'Activate'}
           </button>
         </td>
         <td class='py-4 px-6'>

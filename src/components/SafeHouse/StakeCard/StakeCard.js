@@ -2,6 +2,7 @@ import Tippy from '@tippyjs/react';
 import React, { useState } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import 'tippy.js/dist/tippy.css'; // optional
+import img from '../../../assets/images/icons/hst-final.png';
 import AddForm from './AddForm';
 const StakeCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,12 @@ const StakeCard = () => {
           <div className='mt-5'>
             <div className='text-center mt-2 text-olive'>
               <p>Hustlers Token stored in Safe</p>
-              <p>100</p>
+              <div className='flex justify-center items-center'>
+                <div className='w-12'>
+                  <img src={img} alt='' className='w-full h-full' />
+                </div>
+                <p>100</p>
+              </div>
             </div>
             <div className='flex justify-center'>
               <button className='btn btn-profile mt-3 border-[#d3ddb3] rounded-md'>

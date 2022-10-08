@@ -10,7 +10,7 @@ const StakeCard = () => {
     <div>
       <div className='rounded-md mx-2 mt-10 '>
         <div className='flex justify-between items-center mr-2 mb-2'>
-          <p className='text-olive'>Safe/s: 1</p>
+          <p className='text-primary'>Safe/s: 1</p>
           <InfoIcon />
           <button
             className='btn btn-profile mt-3 rounded'
@@ -35,8 +35,8 @@ const StakeCard = () => {
             </div>
           </div>
           <div className='mt-5'>
-            <div className='text-center mt-2 text-olive'>
-              <p>Hustlers Token stored in Safe</p>
+            <div className='text-center mt-2 text-primary'>
+              <p className='text-primary'>Hustlers Token stored in Safe</p>
               <div className='flex justify-center items-center'>
                 <div className='w-12'>
                   <img src={img} alt='' className='w-full h-full' />

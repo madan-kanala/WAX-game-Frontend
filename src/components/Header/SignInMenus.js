@@ -24,7 +24,7 @@ const MENUS = [
     icon: WOMBAT_WALLET,
   },
 ];
-const SignInMenus = () => {
+const SignInMenus = ({ setIsAuthenticated }) => {
   return (
     <div class='p-4 text-sm text-olive bg-black custom-shadow'>
       <div>
@@ -32,7 +32,12 @@ const SignInMenus = () => {
 
         <div className='mt-4'>
           {MENUS.map((i) => (
-            <Item key={i.id} text={i.text} icon={i.icon} />
+            <Item
+              key={i.id}
+              text={i.text}
+              icon={i.icon}
+              setIsAuthenticated={setIsAuthenticated}
+            />
           ))}
         </div>
       </div>
@@ -40,9 +45,12 @@ const SignInMenus = () => {
   );
 };
 
-const Item = ({ icon, text }) => {
+const Item = ({ icon, text, setIsAuthenticated }) => {
   return (
-    <div className='custom-shadow border-none flex justify-between items-center btn btn-default mb-5 pr-3 rounded-md overflow-hidden py-1 pl-2 hover:cursor-pointer'>
+    <div
+      className='custom-shadow border-none flex justify-between items-center btn btn-default mb-5 pr-3 rounded-md overflow-hidden py-1 pl-2 hover:cursor-pointer'
+      onClick={() => setIsAuthenticated(true)}
+    >
       <IconImage url={icon} />
       <p className='text-white'>{text}</p>
       <div className='text-white'>

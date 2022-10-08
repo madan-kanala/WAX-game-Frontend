@@ -2,6 +2,7 @@ import Tippy from '@tippyjs/react';
 import React, { useState } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import 'tippy.js/dist/tippy.css'; // optional
+import img from '../../../assets/images/icons/hst-final.png';
 import AddForm from './AddForm';
 const StakeCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const StakeCard = () => {
     <div>
       <div className='rounded-md mx-2 mt-10 '>
         <div className='flex justify-between items-center mr-2 mb-2'>
-          <p className='text-olive'>Safe/s: 1</p>
+          <p className='text-primary'>Safe/s: 1</p>
           <InfoIcon />
           <button
             className='btn btn-profile mt-3 rounded'
@@ -34,9 +35,14 @@ const StakeCard = () => {
             </div>
           </div>
           <div className='mt-5'>
-            <div className='text-center mt-2 text-olive'>
-              <p>Hustlers Token stored in Safe</p>
-              <p>100</p>
+            <div className='text-center mt-2 text-primary'>
+              <p className='text-primary'>Hustlers Token stored in Safe</p>
+              <div className='flex justify-center items-center'>
+                <div className='w-12'>
+                  <img src={img} alt='' className='w-full h-full' />
+                </div>
+                <p>100</p>
+              </div>
             </div>
             <div className='flex justify-center'>
               <button className='btn btn-profile mt-3 border-[#d3ddb3] rounded-md'>

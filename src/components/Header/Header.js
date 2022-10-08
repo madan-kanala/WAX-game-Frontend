@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AuthMenu from './AuthMenu';
 import HumbuggerMenu from './Humberger/HumbuggerMenu';
 import Logo from './Logo';
 import Menu from './Menu';
 
 const Header = ({ isTransparent = false }) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
     <div
       className={`${
@@ -15,7 +16,10 @@ const Header = ({ isTransparent = false }) => {
         <div className='flex justify-between items-center'>
           <Logo />
           <Menu />
-          <AuthMenu />
+          <AuthMenu
+            isAuthenticated={isAuthenticated}
+            setIsAuthenticated={setIsAuthenticated}
+          />
           <HumbuggerMenu />
         </div>
       </div>

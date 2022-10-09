@@ -10,24 +10,16 @@ const Information = () => {
         <div className='flex flex-col gap-y-1 '>
           <div className='text-primary'>
             <div className='flex gap-1 box-border items-center gap-x-2'>
-              <p>Name:</p>
-              <input
-                type='text'
-                name=''
-                id=''
-                placeholder='enter name'
-                className='border rounded-md text-base px-2 py-0.5 box-border block w-full bg-transparent text-primary placeholder:text-primary'
-              />
+              <p className=''>Name:</p>
+              <p className='border rounded-md text-base px-2 py-0.5 box-border w-full s text-primary'>
+                John Doe
+              </p>
             </div>
             <div className='flex gap-1 box-border items-center gap-x-2 my-3'>
-              <p>Gang:</p>
-              <input
-                type='text'
-                name=''
-                id=''
-                placeholder='enter name'
-                className='border rounded-md text-base px-2 py-0.5 box-border block w-full bg-transparent text-primary placeholder:text-primary'
-              />
+              <p className=''>Gang:</p>
+              <p className='border rounded-md text-base px-2 py-0.5 box-border w-full s text-primary'>
+                Gang 1
+              </p>
             </div>
           </div>
         </div>

@@ -70,7 +70,7 @@ const AuthMenu = ({ isAuthenticated, setIsAuthenticated }) => {
         </div>
         {isAuthenticated && (
           <div
-            className='w-5 mt-3 ml-2 cursor-pointer'
+            className='w-4 mt-3 ml-2 cursor-pointer'
             onClick={() => setIsAuthenticated(false)}
           >
             <img src={logoutIcon} className='w-full h-full' alt='' />

@@ -1,6 +1,29 @@
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
+import { v4 as uuid } from 'uuid';
+import icon3 from '../../../../../assets/images/icons/clean-cash.png';
+import icon4 from '../../../../../assets/images/icons/hst-final.png';
+import icon2 from '../../../../../assets/images/icons/hustler-clean-cash-token.png';
+import icon1 from '../../../../../assets/images/icons/slot.png';
 import Modal from '../../../../shared/Modal';
+
+const data = [
+  {
+    id: uuid(),
+    icon: icon2,
+    cost: '25000',
+  },
+  {
+    id: uuid(),
+    icon: icon3,
+    cost: '15000',
+  },
+  {
+    id: uuid(),
+    icon: icon4,
+    cost: '1000',
+  },
+];
 
 const AddForm = ({ isOpen, setIsOpen }) => {
   return (
@@ -13,66 +36,59 @@ const AddForm = ({ isOpen, setIsOpen }) => {
         className='w-full py-4 px-6 bg-black rounded-md'
         style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
       >
-        <form>
+        <>
           <div className='flex justify-between items-center mb-2'>
-            <h2 className='px-5 py-2 font-Inter text-center text-2xl font-bold text-olive'>
-              Add Slot
+            <div />
+            <div />
+            <h2 className='px-5 py-2 font-Inter text-center text-2xl font-bold text-primary'>
+              Slot Upgrade Cost
             </h2>
             <FaTimes
-              className='text-olive text-2xl block hover:cursor-pointer'
+              className='text-primary text-2xl block hover:cursor-pointer'
               onClick={() => setIsOpen(false)}
             />
           </div>
 
-          <div>
-            <div className='text-end text-olive'>
-              <p>0.94</p>
-            </div>
-            <div className='flex bg-olive justify-between py-2 px-1.5 rounded-md items-center'>
-              <input
-                type='text'
-                name=''
-                className=' flex-1 bg-transparent border-none outline-none px-2 py-2'
-                placeholder='insert amount'
-                id=''
-              />
-              <p className='w-16 pl-2.5 '>HDC</p>
-            </div>
-          </div>
-          <div className='mt-2'>
-            <div className='text-end text-olive '>
-              <p>8019.02</p>
-            </div>
-            <div className='flex bg-olive justify-between py-2 px-1.5 rounded-md items-center'>
-              <input
-                type='text'
-                name=''
-                className='  flex-1 bg-transparent border-none outline-none pl-4 py-2'
-                placeholder='insert amount'
-                id=''
-              />
-              <p className='w-16 pl-2.5  py-2 rounded-md '>HCC</p>
-            </div>
-          </div>
-          <div className='mt-2'>
-            <div className='text-end text-olive '>
-              <p>8019.02</p>
-            </div>
-            <div className='flex bg-olive justify-between py-2 px-1.5 rounded-md items-center'>
-              <input
-                type='text'
-                name=''
-                className='  border-none outline-none pl-4 py-2 flex-1 bg-transparent'
-                placeholder='insert amount'
-                id=''
-              />
-              <p className='w-16 pl-2.5  py-2 rounded-md '>HT</p>
+          <div className='flex justify-center'>
+            <div>
+              <div
+                className='flex justify-center gap-x-3 items-center'
+                key={Math.random()}
+              >
+                <div className='w-10'>
+                  <img
+                    src={icon1}
+                    className='w-full h-full object-contain'
+                    alt=''
+                  />
+                </div>
+                <p className='text-primary font-bold'>1000</p>
+              </div>
+              {data.map((item) => (
+                <div className='flex  gap-x-3 items-center' key={Math.random()}>
+                  <div className='w-16'>
+                    <img
+                      src={item.icon}
+                      className='w-full h-full object-contain'
+                      alt=''
+                    />
+                  </div>
+                  <p className='text-primary font-bold'>{item.cost}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className='flex justify-center mt-5'>
-            <button className='btn btn-profile rounded'>Add Slot</button>
+            <button
+              className='btn btn-profile rounded'
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              Upgrade
+            </button>
           </div>
-        </form>
+        </>
       </div>
     </Modal>
   );

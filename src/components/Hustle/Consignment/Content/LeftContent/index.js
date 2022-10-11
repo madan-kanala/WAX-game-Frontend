@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import icon1 from '../../../../../assets/images/icons/solo-g.png';
+import Character from '../../../Corner/Content/LeftContent/Character';
 const LeftContent = () => {
+  const [character, setCharacter] = useState([]);
   return (
     <div className='md:w-4/12 order-2 md:order-1'>
       <div className='box-border mx-4  pb-4 '>
@@ -13,8 +15,21 @@ const LeftContent = () => {
             <img src={icon1} alt='' className='w-full h-full object-' />
           </div>
         </div>
+        <div className='text-center box-border border rounded-md h-80 overflow-hidden p-6 bg-black mr-2 custom-shadow '>
+          <div className='flex h-full justify-center items-center'>
+            {character.length > 0 ? (
+              character.map((i) => <Character />)
+            ) : (
+              <div
+                onClick={() => setCharacter([{ id: 1 }])}
+                className='w-full h-full'
+              >
+                <Add />
+              </div>
+            )}
+          </div>
+        </div>
 
-        <Item />
         <div className='mt-2'>
           <div className='flex items-center justify-center gap-x-2'>
             <div className='w-6'>
@@ -39,15 +54,11 @@ const LeftContent = () => {
   );
 };
 
-const Item = () => {
+const Add = () => {
   return (
     <>
-      <div className='text-center box-border border rounded-md h-80 overflow-hidden p-6 bg-black mr-2 custom-shadow '>
-        <div className='flex h-full justify-center items-center'>
-          <div className='w-full px-2 h-full border cursor-pointer border-gray-400  flex justify-center items-center rounded-3xl'>
-            <FaPlus className='text-gray-300 text-5xl' />
-          </div>
-        </div>
+      <div className='w-full px-2 h-full border cursor-pointer border-gray-400  flex justify-center items-center rounded-3xl'>
+        <FaPlus className='text-gray-300 text-5xl' />
       </div>
     </>
   );

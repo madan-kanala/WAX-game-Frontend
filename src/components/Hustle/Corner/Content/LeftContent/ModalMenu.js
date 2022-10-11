@@ -22,18 +22,15 @@ const ModalMenu = ({ isOpen, setIsOpen, startUpgradeTimer }) => {
                 onClick={() => setIsOpen(false)}
               />
             </div>
+            <h2 className='px-5 py-2 font-Inter text-center text-2xl font-bold text-olive'>
+              Upgrade Cost
+            </h2>
 
             <div className='text-center'>
-              <div className='my-2'>
-                <div className='text-end text-olive'>
-                  <p>0.94</p>
-                </div>
+              <div className='my-5'>
                 <div className='btn btn-default rounded-md'>Collect Reward</div>
               </div>
-              <div className='my-2'>
-                <div className='text-end text-olive'>
-                  <p>0.94</p>
-                </div>
+              <div className='my-5'>
                 <div
                   className='btn btn-default rounded-md'
                   onClick={() => setIsUpgradeOpen(true)}
@@ -41,11 +38,11 @@ const ModalMenu = ({ isOpen, setIsOpen, startUpgradeTimer }) => {
                   Upgrade
                 </div>
               </div>
-              <div className='my-2'>
-                <div className='text-end text-olive'>
-                  <p>0.94</p>
-                </div>
-                <div className='btn btn-default rounded-md'>Unstake</div>
+              <div className='my-5'>
+                <div className='btn btn-default rounded-md'>Pay bail</div>
+              </div>
+              <div className='my-5'>
+                <div className='btn btn-default rounded-md'>Stats</div>
               </div>
             </div>
           </div>

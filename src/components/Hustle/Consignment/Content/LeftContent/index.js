@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
-import { FaPlus } from 'react-icons/fa';
-import icon1 from '../../../../../assets/images/icons/solo-g.png';
-import Character from '../../../Corner/Content/LeftContent/Character';
+import React, { useState } from "react";
+import { FaPlus } from "react-icons/fa";
+import icon1 from "../../../../../assets/images/icons/solo-g.png";
+import Character from "../../../Corner/Content/LeftContent/Character";
 const LeftContent = () => {
   const [character, setCharacter] = useState([]);
   return (
-    <div className='md:w-4/12 order-2 md:order-1'>
-      <div className='box-border mx-4  pb-4 '>
-        <div className='flex items-center gap-x-2 mb-3'>
-          <p className='text-center text-olive text-xl ml-4 font-bold'>
+    <div className="order-2 w-full md:w-1/2 lg:order-1 lg:w-4/12">
+      <div className="mx-4 box-border  pb-4 ">
+        <div className="mb-3 flex items-center gap-x-2">
+          <p className="ml-4 text-center text-xl font-bold text-olive">
             Transporter: 0/1
           </p>
-          <div className='w-8'>
-            <img src={icon1} alt='' className='w-full h-full object-' />
+          <div className="w-8">
+            <img src={icon1} alt="" className="object- h-full w-full" />
           </div>
         </div>
-        <div className='text-center box-border border rounded-md h-80 overflow-hidden p-6 bg-black mr-2 custom-shadow '>
-          <div className='flex h-full justify-center items-center'>
+        <div className="custom-shadow mr-2 box-border h-80 overflow-hidden rounded-md border bg-black p-6 text-center ">
+          <div className="flex h-full items-center justify-center">
             {character.length > 0 ? (
               character.map((i) => <Character />)
             ) : (
               <div
                 onClick={() => setCharacter([{ id: 1 }])}
-                className='w-full h-full'
+                className="h-full w-full"
               >
                 <Add />
               </div>
@@ -30,21 +30,21 @@ const LeftContent = () => {
           </div>
         </div>
 
-        <div className='mt-2'>
-          <div className='flex items-center justify-center gap-x-2'>
-            <div className='w-6'>
-              <img src={icon1} alt='' className='w-full h-full object-' />
+        <div className="mt-2">
+          <div className="flex items-center justify-center gap-x-2">
+            <div className="w-6">
+              <img src={icon1} alt="" className="object- h-full w-full" />
             </div>
-            <p className='text-center text-olive text-sm font-bold'>
+            <p className="text-center text-sm font-bold text-olive">
               Locked Up
             </p>
           </div>
-          <div className='w-5/12 mx-auto mt-2'>
-            <p className='text-primary text-center text-lg'>0/1</p>
-            <div className='w-full h-24 btn btn-default flex justify-center items-center rounded-xl'>
-              <FaPlus className='text-gray-300 text-5xl' />
+          <div className="mx-auto mt-2 w-5/12">
+            <p className="text-center text-lg text-primary">0/1</p>
+            <div className="btn btn-default flex h-24 w-full items-center justify-center rounded-xl">
+              <FaPlus className="text-5xl text-gray-300" />
             </div>
-            <p className='btn btn-default w-full mt-3 rounded-md text-center capitalize'>
+            <p className="btn btn-default mt-3 w-full rounded-md text-center capitalize">
               Get Out of jail
             </p>
           </div>
@@ -57,8 +57,8 @@ const LeftContent = () => {
 const Add = () => {
   return (
     <>
-      <div className='w-full px-2 h-full border cursor-pointer border-gray-400  flex justify-center items-center rounded-3xl'>
-        <FaPlus className='text-gray-300 text-5xl' />
+      <div className="flex h-full w-full cursor-pointer items-center justify-center  rounded-3xl border border-gray-400 px-2">
+        <FaPlus className="text-5xl text-gray-300" />
       </div>
     </>
   );

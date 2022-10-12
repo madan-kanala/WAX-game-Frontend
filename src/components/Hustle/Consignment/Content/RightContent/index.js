@@ -13,7 +13,7 @@ const RightContent = () => {
   }, []);
 
   return (
-    <div className='mt-12 md:mt-0 md:w-4/12 order-3 '>
+    <div className=' w-full mt-12 md:mt-0 md:w-1/2 lg:w-4/12 order-3 '>
       <div className='flex justify-between mb-2 items-center'>
         <div className=' flex items-center gap-x-2'>
           <p className='text-center text-olive text-xl ml-4 font-bold'>

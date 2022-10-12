@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import ModalMenu from './ModalMenu';
-import CountdownTimer from './Timer';
+import React, { useState } from "react";
+import ModalMenu from "./ModalMenu";
+import CountdownTimer from "./Timer";
 const Character = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isUpgradeStart, setIsUpgradeStart] = useState(false);
@@ -27,13 +27,13 @@ const Character = () => {
           )}
         </div>
         <div
-          className='w-60 h-60 cursor-pointer'
+          className="h-60 w-60 cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
           <img
-            src='https://images.pexels.com/photos/102100/pexels-photo-102100.jpeg?auto=compress&cs=tinysrgb&w=1600'
-            className='w-full h-full object-contain'
-            alt=''
+            src="https://images.pexels.com/photos/102100/pexels-photo-102100.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            className="h-full w-full object-contain"
+            alt=""
           />
         </div>
       </div>

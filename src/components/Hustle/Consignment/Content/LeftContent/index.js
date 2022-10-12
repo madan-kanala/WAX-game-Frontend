@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import icon1 from "../../../../../assets/images/icons/solo-g.png";
-import Character from "../../../Corner/Content/LeftContent/Character";
+import Character from "./Character";
 const LeftContent = () => {
   const [character, setCharacter] = useState([]);
   return (

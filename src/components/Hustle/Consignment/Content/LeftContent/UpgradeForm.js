@@ -42,6 +42,8 @@ const UpgradeForm = ({ isOpen, setIsOpen, startUpgradeTimer }) => {
       >
         <form onSubmit={submitHandler}>
           <div className="mb-2 flex items-center justify-between">
+            <div />
+            <div />
             <h2 className="px-5 py-2 text-center font-Inter text-2xl font-bold text-olive">
               Upgrade Character
             </h2>

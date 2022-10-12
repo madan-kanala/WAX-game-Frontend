@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import Modal from '../../../../shared/Modal';
+import Stats from './Stats';
 import UpgradeForm from './UpgradeForm';
 
 const ModalMenu = ({ isOpen, setIsOpen, startUpgradeTimer }) => {
   const [isUpGradeOpen, setIsUpgradeOpen] = useState(false);
+  const [isStatsOpen, setIsStatsOpen] = useState(false);
   return (
     <>
       <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
@@ -41,7 +43,7 @@ const ModalMenu = ({ isOpen, setIsOpen, startUpgradeTimer }) => {
               <div className='my-5'>
                 <div className='btn btn-default rounded-md'>Pay bail</div>
               </div>
-              <div className='my-5'>
+              <div className='my-5' onClick={() => setIsStatsOpen(true)}>
                 <div className='btn btn-default rounded-md'>Stats</div>
               </div>
             </div>
@@ -53,6 +55,7 @@ const ModalMenu = ({ isOpen, setIsOpen, startUpgradeTimer }) => {
         setIsOpen={setIsUpgradeOpen}
         startUpgradeTimer={startUpgradeTimer}
       />
+      <Stats isOpen={isStatsOpen} setIsOpen={setIsStatsOpen} />
     </>
   );
 };

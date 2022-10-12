@@ -11,7 +11,7 @@ const MiddleContent = () => {
             <div className="w-full">
               <div className="flex flex-col items-center justify-center gap-y-1">
                 <p className="text-center text-xl font-semibold text-primary">
-                  Collected HCC:
+                  Collected Dirty Cash
                 </p>
                 <div className="w-16">
                   <img src={icon1} alt="" className="object- h-full w-full" />
@@ -27,7 +27,7 @@ const MiddleContent = () => {
             <div className="w-full">
               <div className="flex flex-col items-center justify-center gap-y-1">
                 <p className="text-center text-xl font-semibold text-primary">
-                  Bail Cost (HCC):
+                  Bail Cost
                 </p>
                 <div className="w-16">
                   <img src={icon2} alt="" className="object- h-full w-full" />

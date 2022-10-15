@@ -1,15 +1,15 @@
-import React from 'react';
-import Bottom from './Bottom';
-import Content from './Content';
-import Top from './Top';
+import React from "react";
+// import Bottom from './Bottom';
+import Content from "./Content";
+import Top from "./Top";
 
 const Corner = () => {
   return (
-    <div className='bg-black py-10 md:min-h-screen'>
-      <div className='container mx-auto '>
+    <div className="bg-black py-10 md:min-h-screen">
+      <div className="container mx-auto ">
         <Top />
         <Content />
-        <Bottom />
+        {/* <Bottom /> */}
       </div>
     </div>
   );

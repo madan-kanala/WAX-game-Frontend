@@ -16,8 +16,8 @@ const Character = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="w-1/2">
+      <div className="m-2">
         <div>
           {isUpgradeStart && (
             <CountdownTimer
@@ -27,12 +27,12 @@ const Character = () => {
           )}
         </div>
         <div
-          className="h-60 w-60 cursor-pointer"
+          className="h-40 w-full cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
           <img
             src="https://images.pexels.com/photos/102100/pexels-photo-102100.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            className="h-full w-full object-contain"
+            className="h-full w-full object-cover"
             alt=""
           />
         </div>

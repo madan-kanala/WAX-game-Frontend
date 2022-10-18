@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaTimes } from 'react-icons/fa';
-import Modal from '../../../../shared/Modal';
+import React from "react";
+import { FaTimes } from "react-icons/fa";
+import Modal from "../../../../shared/Modal";
 
 const Stats = ({ isOpen, setIsOpen }) => {
   return (
@@ -10,16 +10,17 @@ const Stats = ({ isOpen, setIsOpen }) => {
       //   className='w-8/12'
     >
       <div
-        className='w-full py-4 px-6 bg-black rounded-md'
-        style={{ boxShadow: '#a5a5a5eb 0px 0px 9px 0px' }}
+        className="w-full rounded-md bg-black py-4 px-6"
+        style={{ boxShadow: "#a5a5a5eb 0px 0px 9px 0px" }}
       >
         <div>
-          <div className='flex justify-between items-center mb-2'>
-            <h2 className='px-5 py-2 font-Inter text-center text-2xl font-bold text-olive'>
-              Upgrade Character
+          <div className="mb-2 flex items-center justify-between">
+            <div />
+            <h2 className="px-5 py-2 text-center font-Inter text-2xl font-bold text-olive">
+              Character Stats
             </h2>
             <FaTimes
-              className='text-olive text-2xl block hover:cursor-pointer'
+              className="block text-2xl text-olive hover:cursor-pointer"
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -27,16 +28,16 @@ const Stats = ({ isOpen, setIsOpen }) => {
           </div>
 
           <div>
-            <div className='mt-2'>
-              <Item text={'Name'} value={''} />
-              <Item text={'Rarity'} value={''} />
-              <Item text={'Level'} value={''} />
-              <Item text={'Edition'} value={''} />
-              <Item text={'Hustling'} value={''} />
-              <Item text={'Collected Dc'} value={''} />
-              <p className='mt-3 text-primary font-bold'>Attributes</p>
-              <Item text={'Strength'} value={''} />
-              <Item text={'Hustlers Ambition'} value={''} />
+            <div className="mt-2">
+              <Item text={"Name"} value={""} />
+              <Item text={"Rarity"} value={""} />
+              <Item text={"Level"} value={""} />
+              <Item text={"Edition"} value={""} />
+              <Item text={"Hustling"} value={""} />
+              <Item text={"Collected Dc"} value={""} />
+              <p className="mt-3 font-bold text-primary">Attributes</p>
+              <Item text={"Strength"} value={""} />
+              <Item text={"Hustlers Ambition"} value={""} />
             </div>
           </div>
         </div>
@@ -46,8 +47,8 @@ const Stats = ({ isOpen, setIsOpen }) => {
 };
 
 const Item = ({ text, value }) => (
-  <p className='text-primary'>
-    <span className='text-primary '>{text}:</span> {'  '} {value}
+  <p className="text-primary">
+    <span className="text-primary ">{text}:</span> {"  "} {value}
   </p>
 );
 

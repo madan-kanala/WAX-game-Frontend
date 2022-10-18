@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Countdown from 'react-countdown';
-import UpgradeConfirm from './UpgradeConfirm';
+import React, { useState } from "react";
+import Countdown from "react-countdown";
+import UpgradeConfirm from "./UpgradeConfirm";
 
 // Renderer callback with condition
 
@@ -15,12 +15,11 @@ const renderer = (props) => {
     props: compProps,
   } = props;
 
-  if (completed || api.isStopped())
-    return <span className='text-olive'>Character upgraded successfully!</span>;
-  const getDays = days ? days + (days === 1 ? ' Day' : ' Days') : '';
-  const getHours = hours ? hours + (hours === 1 ? ' Hour' : ' Hours') : '';
-  const getMin = minutes ? minutes + (minutes === 1 ? ' Min' : ' Min') : '';
-  const getSec = seconds ? seconds + (seconds === 1 ? ' Sec' : ' Sec') : '';
+  if (completed || api.isStopped()) return "Character upgraded successfully!";
+  const getDays = days ? days + (days === 1 ? " Day" : " Days") : "";
+  const getHours = hours ? hours + (hours === 1 ? " Hour" : " Hours") : "";
+  const getMin = minutes ? minutes + (minutes === 1 ? " Min" : " Min") : "";
+  const getSec = seconds ? seconds + (seconds === 1 ? " Sec" : " Sec") : "";
   const { isOpen, setIsOpen } = compProps;
 
   const confirmHandler = () => {
@@ -32,12 +31,12 @@ const renderer = (props) => {
   };
 
   return (
-    <div className='mb-2'>
-      <p className='text-olive'>
+    <div className="mb-2">
+      <p className="text-primary">
         Upgrading will finish in:{getDays} {getHours} {getMin} {getSec}
       </p>
       <button
-        className='btn btn-default'
+        className="btn btn-default"
         onClick={() => {
           setIsOpen(true);
         }}

@@ -2,18 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ShopMenu from "./MenuItems/ShopMenu";
 const Menu = () => {
-  const menusList = [
-    {
-      id: 1,
-      label: "Consignment",
-      url: "/consignment",
-    },
-    {
-      id: 2,
-      label: "The Corner",
-      url: "/the-corner",
-    },
-  ];
+  //   const menusList = [
+  //     {
+  //       id: 1,
+  //       label: "Consignment",
+  //       url: "/consignment",
+  //     },
+  //     {
+  //       id: 2,
+  //       label: "The Corner",
+  //       url: "/the-corner",
+  //     },
+  //   ];
 
   return (
     <div className="hidden md:block">

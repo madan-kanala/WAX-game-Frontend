@@ -1,6 +1,6 @@
 import React from "react";
 import icon2 from "../../../../assets/images/icons/clean-cash.png";
-import icon1 from "../../../../assets/images/icons/hustler-dirty-cash-token.png";
+import icon1 from "../../../../assets/images/icons/hustler-clean-cash-token.png";
 
 const MiddleContent = () => {
   return (

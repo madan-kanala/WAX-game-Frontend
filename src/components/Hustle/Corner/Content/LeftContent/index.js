@@ -44,7 +44,7 @@ const LeftContent = () => {
           </div>
           <div className="mx-auto mt-2 w-5/12">
             <div
-              className="btn btn-default flex h-24 w-full items-center justify-center rounded-xl"
+              className="flex h-24 w-full items-center justify-center rounded border"
               onClick={() => setIsOpen(true)}
             >
               <FaPlus className="text-5xl text-gray-300" />
